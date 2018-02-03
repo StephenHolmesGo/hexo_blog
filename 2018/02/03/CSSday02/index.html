@@ -1,0 +1,777 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="CSS,学习," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="如何插入样式表当读到一个样式表时，浏览器会根据它来格式化HTML 文档。插入样式表的方法有三种：外部样式表当样式需要应用于很多页面时，外部样式表将是理想的选择。在使用外部样式表的情况下，你可以通过改变一个文件来改变整个站点的外观。每个页面使用\标签链接到样式表，\标签在文档的头部：">
+<meta name="keywords" content="CSS,学习">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS 学习day02">
+<meta property="og:url" content="http://yoursite.com/2018/02/03/CSSday02/index.html">
+<meta property="og:site_name" content="Stephen&#39;s Blog">
+<meta property="og:description" content="如何插入样式表当读到一个样式表时，浏览器会根据它来格式化HTML 文档。插入样式表的方法有三种：外部样式表当样式需要应用于很多页面时，外部样式表将是理想的选择。在使用外部样式表的情况下，你可以通过改变一个文件来改变整个站点的外观。每个页面使用\标签链接到样式表，\标签在文档的头部：">
+<meta property="og:updated_time" content="2017-08-17T17:34:13.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS 学习day02">
+<meta name="twitter:description" content="如何插入样式表当读到一个样式表时，浏览器会根据它来格式化HTML 文档。插入样式表的方法有三种：外部样式表当样式需要应用于很多页面时，外部样式表将是理想的选择。在使用外部样式表的情况下，你可以通过改变一个文件来改变整个站点的外观。每个页面使用\标签链接到样式表，\标签在文档的头部：">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":5},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/02/03/CSSday02/"/>
+
+
+
+
+
+  <title>CSS 学习day02 | Stephen's Blog</title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Stephen's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-movie">
+          <a href="/categories/movie" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            电影
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/03/CSSday02/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/logo2.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Stephen's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">CSS 学习day02</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-03T07:53:24+08:00">
+                2018-02-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="如何插入样式表"><a href="#如何插入样式表" class="headerlink" title="如何插入样式表"></a>如何插入样式表</h3><h4 id="当读到一个样式表时，浏览器会根据它来格式化HTML-文档。插入样式表的方法有三种："><a href="#当读到一个样式表时，浏览器会根据它来格式化HTML-文档。插入样式表的方法有三种：" class="headerlink" title="当读到一个样式表时，浏览器会根据它来格式化HTML 文档。插入样式表的方法有三种："></a>当读到一个样式表时，浏览器会根据它来格式化HTML 文档。插入样式表的方法有三种：</h4><p><strong>外部样式表</strong><br>当样式需要应用于很多页面时，外部样式表将是理想的选择。在使用外部样式表的情况下，你可以通过改变一个文件来改变整个站点的外观。每个页面使用\<link\>标签链接到样式表，\<link\>标签在文档的头部：<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;head&gt;</div><div class="line">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot; /&gt;</div><div class="line">&lt;/head&gt;</div></pre></td></tr></table></figure></link\></link\></p>
+<p>浏览器会从文件mystyle.css中读到样式声明，并根据它来格式文档。<br>外部样式表可以在任何文本编辑器中进行编辑。文件不能包含任何html标签。样式表应该以.css扩展名进行保存。下面是一个样式表文件的例子：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">hr &#123;</div><div class="line">	color: sienna;</div><div class="line">	&#125;</div><div class="line">p &#123;</div><div class="line">	margin-left: 20px;</div><div class="line">	&#125;</div><div class="line">body &#123;</div><div class="line">	background-image: url(&quot;images/back40.gif&quot;;)</div><div class="line">	&#125;</div></pre></td></tr></table></figure></p>
+<p>不要在属性值与单位之间留有空格。</p>
+<p><strong>内部样式表</strong><br>当单个文档需要特殊的格式时，就应该使用内部样式表。可以用\<style\>标签在文档头部定义内部样式表。例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;p style=&quot;color:sienna;margin-left: 20px;&quot;&gt;</div><div class="line">test</div><div class="line">&lt;/p&gt;</div></pre></td></tr></table></figure></style\></p>
+<hr>
+<h4 id="多重样式"><a href="#多重样式" class="headerlink" title="多重样式"></a>多重样式</h4><p>如果某些属性在不同的样式表中被同样的选择器定义，那么属性值将从更具体的样式表中被继承过来。<br>例如，外部样式表拥有针对h3选择器的三个属性：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">h3 &#123;</div><div class="line">	color: red;</div><div class="line">	text-align: left;</div><div class="line">	font-size: 8pt;	</div><div class="line">	&#125;</div></pre></td></tr></table></figure></p>
+<p>而内部样式表拥有针对h3选择器的两个属性：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">h3&#123;</div><div class="line">	text-align: right;</div><div class="line">	font-size: 20pt;	</div><div class="line">	&#125;</div></pre></td></tr></table></figure></p>
+<p>假如拥有内部样式表的这个页面同时与外部样式表链接，那h3拥有的样式是：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">color: red;</div><div class="line">text-align: right;</div><div class="line">font-size: 20pt;</div></pre></td></tr></table></figure></p>
+<p>即颜色属性会被继承于外部样式表，而文字排列(text-alignment)和字体尺寸(font-size)会被内部样式表中的规则取代。</p>
+<hr>
+<h3 id="CSS-背景"><a href="#CSS-背景" class="headerlink" title="CSS 背景"></a>CSS 背景</h3><h4 id="CSS-允许应用纯色作为背景，也允许使用背景图像创建相当复杂的效果。CSS-在这方面的能力远远在HTML-之上。"><a href="#CSS-允许应用纯色作为背景，也允许使用背景图像创建相当复杂的效果。CSS-在这方面的能力远远在HTML-之上。" class="headerlink" title="CSS 允许应用纯色作为背景，也允许使用背景图像创建相当复杂的效果。CSS 在这方面的能力远远在HTML 之上。"></a>CSS 允许应用纯色作为背景，也允许使用背景图像创建相当复杂的效果。CSS 在这方面的能力远远在HTML 之上。</h4><h4 id="纯色背景"><a href="#纯色背景" class="headerlink" title="纯色背景"></a>纯色背景</h4><p>可以使用<em>back-ground-color</em>属性为元素设置背景色。这个属性接受任何合法的颜色值。<br>这条规则把元素的背景颜色设定为灰色：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">p &#123;</div><div class="line">	background-color: gray;</div><div class="line">	padding: 20px;</div><div class="line">	&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="background-color属性不能继承，其默认值为透明。"><a href="#background-color属性不能继承，其默认值为透明。" class="headerlink" title="background-color属性不能继承，其默认值为透明。"></a><em>background-color</em>属性不能继承，其默认值为透明。</h2><h3 id="背景图像"><a href="#背景图像" class="headerlink" title="背景图像"></a>背景图像</h3><p>要把图像放入背景，必须为这个属性设置一个url值：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">body &#123;</div><div class="line">	background-image: url(&quot;/i/eg_bg_04.gif&quot;);	</div><div class="line">	&#125;</div></pre></td></tr></table></figure></p>
+<p>大多数背景都应用到body元素，不过并不仅限于此。<br>下面例子为一个段落应用了一个背景，而不会对文档的其他部分应用背景：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">p.flower &#123;</div><div class="line">	background-image: url(&quot;/i/eg_bg_03.gif&quot;)	;</div><div class="line">	&#125;</div><div class="line">还可以为行内元素设置背景图像，下面的例子为一个链接设置了背景图像：</div><div class="line">a.radio &#123;</div><div class="line">		background-image: url(&quot;/i/eg_bg_03.gif&quot;);</div><div class="line">	&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&lt;html&gt;</div><div class="line">&lt;head&gt;</div><div class="line"></div><div class="line">&lt;style type=&quot;text/css&quot;&gt;</div><div class="line">body &#123;background-image:url(/i/eg_bg_04.gif);&#125;</div><div class="line">p.flower &#123;background-image: url(/i/eg_bg_03.gif); padding: 20px;&#125;</div><div class="line">a.radio &#123;background-image: url(/i/eg_bg_07.gif);  padding: 20px;&#125;</div><div class="line">&lt;/style&gt;</div><div class="line"></div><div class="line">&lt;/head&gt;</div><div class="line"></div><div class="line">&lt;body&gt;</div><div class="line">&lt;p class=&quot;flower&quot;&gt;我是一个有花纹背景的段落。&lt;a href=&quot;#&quot; class=&quot;radio&quot;&gt;我是一个有放射性背景的链接。&lt;/a&gt;&lt;/p&gt;</div><div class="line">&lt;p&gt;&lt;b&gt;注释：&lt;/b&gt;为了清晰地显示出段落和链接的背景图像，我们为它们设置了少许内边距。&lt;/p&gt;</div><div class="line">&lt;/body&gt;</div><div class="line"></div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+<h3 id="背景重复"><a href="#背景重复" class="headerlink" title="背景重复"></a>背景重复</h3><p>如果需要在页面上对背景图片进行平铺，可以使用<em>background-repeat</em> 属性。<br>属性值repeat导致图像在水平垂直方向都平铺，repeat-x和repeat-y分别导致图像只在水平或者垂直方向上重复，no-repeat则不允许图像在任何方向上平铺。<br>默认的，背景图像将从一个元素的左上角开始。例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">body &#123;</div><div class="line">	background-image: url(&quot;/i/eg_bg_03.gif&quot;);</div><div class="line">	background-repeat: repeat-y;	</div><div class="line">	&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="背景定位"><a href="#背景定位" class="headerlink" title="背景定位"></a>背景定位</h3><p>可以利用<em>background-position</em>属性改变图像<br>下面的例子在body元素中将背景图像居中：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">body &#123;</div><div class="line">	background-image: url(&quot;/i/eg_bg_03.gif&quot;);</div><div class="line">	background-repeat: no-repeat;</div><div class="line">	background-position: center;	</div><div class="line">	&#125;</div></pre></td></tr></table></figure></p>
+<p>为<em>background-position</em>属性提供值的方法还有很多，可以使用的一些关键词：top,bottom,left,right和center。通常，这些关键词会成对出现。还可以用长度值，例如100px和5cm或者百分值，不同类型的值对于背景图像的放置会稍有差异。</p>
+<h3 id="背景关联"><a href="#背景关联" class="headerlink" title="背景关联"></a>背景关联</h3><p>如果文档较长，那么文档向下滚动时，背景图像也会随之滚动，当文档滚动到超出图像位置的范围时，图像就会消失。<br>可以通过<em>background-attachment</em>属性防止这种滚动，通过这个属性，可以声明图像相对于可视范围是固定的，因此不会受到滚动的影响：<br><figure class="highlight plain"><figcaption><span>&#123;</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">background-image: url(&quot;/i/ed_bg_03.gif&quot;);</div><div class="line">background-repeat: no-repeat;</div><div class="line">background-attachment: fixed;	</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>background-attachment属性默认的值是scroll，也就是说，在默认的情况下，背景会随文档滚动。</p>
+<h3 id="CSS-背景实例"><a href="#CSS-背景实例" class="headerlink" title="CSS 背景实例"></a>CSS 背景实例</h3><ul>
+<li><p>设置背景颜色</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">&lt;html&gt;</div><div class="line">&lt;head&gt;</div><div class="line"></div><div class="line">&lt;style type=&quot;text/css&quot;&gt;</div><div class="line"></div><div class="line">body &#123;background-color: yellow&#125;</div><div class="line">h1 &#123;background-color: #00ff00&#125;</div><div class="line">h2 &#123;background-color: transparent&#125;</div><div class="line">p &#123;background-color: rgb(250,0,255)&#125;</div><div class="line"></div><div class="line">p.no2 &#123;background-color: gray; padding: 20px;&#125;</div><div class="line"></div><div class="line">&lt;/style&gt;</div><div class="line"></div><div class="line">&lt;/head&gt;</div><div class="line"></div><div class="line">&lt;body&gt;</div><div class="line"></div><div class="line">&lt;h1&gt;这是标题 1&lt;/h1&gt;</div><div class="line">&lt;h2&gt;这是标题 2&lt;/h2&gt;</div><div class="line">&lt;p&gt;这是段落&lt;/p&gt;</div><div class="line">&lt;p class=&quot;no2&quot;&gt;这个段落设置了内边距。&lt;/p&gt;</div><div class="line"></div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>设置文本背景颜色</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&lt;html&gt;</div><div class="line">&lt;head&gt;</div><div class="line">&lt;style type=&quot;text/css&quot;&gt;</div><div class="line">span.highlight</div><div class="line">&#123;</div><div class="line">background-color:yellow</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div><div class="line">&lt;/head&gt;</div><div class="line"></div><div class="line">&lt;body&gt;</div><div class="line">&lt;p&gt;</div><div class="line">&lt;span class=&quot;highlight&quot;&gt;这是文本。&lt;/span&gt; 这是文本。 这是文本。 这是文本。 这是文本。 这是文本。 这是文本。 这是文本。 这是文本。 这是文本。 这是文本。 这是文本。 这是文本。 这是文本。 这是文本。 这是文本。 这是文本。 &lt;span class=&quot;highlight&quot;&gt;这是文本。&lt;/span&gt;</div><div class="line">&lt;/p&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>设置图片背景</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">&lt;html&gt;</div><div class="line">&lt;head&gt;</div><div class="line"></div><div class="line">&lt;style type=&quot;text/css&quot;&gt;</div><div class="line">body &#123;background-image:url(/i/eg_bg_04.gif);&#125;</div><div class="line">&lt;/style&gt;</div><div class="line"></div><div class="line">&lt;/head&gt;</div><div class="line"></div><div class="line">&lt;body&gt;&lt;/body&gt;</div><div class="line"></div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>设置图片背景2</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&lt;html&gt;</div><div class="line">&lt;head&gt;</div><div class="line"></div><div class="line">&lt;style type=&quot;text/css&quot;&gt;</div><div class="line">body &#123;background-image:url(/i/eg_bg_04.gif);&#125;</div><div class="line">p.flower &#123;background-image: url(/i/eg_bg_03.gif); padding: 20px;&#125;</div><div class="line">a.radio &#123;background-image: url(/i/eg_bg_07.gif);  padding: 20px;&#125;</div><div class="line">&lt;/style&gt;</div><div class="line"></div><div class="line">&lt;/head&gt;</div><div class="line"></div><div class="line">&lt;body&gt;</div><div class="line">&lt;p class=&quot;flower&quot;&gt;我是一个有花纹背景的段落。&lt;a href=&quot;#&quot; class=&quot;radio&quot;&gt;我是一个有放射性背景的链接。&lt;/a&gt;&lt;/p&gt;</div><div class="line">&lt;p&gt;&lt;b&gt;注释：&lt;/b&gt;为了清晰地显示出段落和链接的背景图像，我们为它们设置了少许内边距。&lt;/p&gt;</div><div class="line">&lt;/body&gt;</div><div class="line"></div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>平铺背景图片</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&lt;html&gt;</div><div class="line">&lt;head&gt;</div><div class="line"></div><div class="line">&lt;style type=&quot;text/css&quot;&gt;</div><div class="line">body</div><div class="line">&#123; </div><div class="line">background-image: </div><div class="line">url(/i/eg_bg_03.gif);</div><div class="line">background-repeat: repeat</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div><div class="line"></div><div class="line">&lt;/head&gt;</div><div class="line"></div><div class="line">&lt;body&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>垂直/水平 方向平铺</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&lt;html&gt;</div><div class="line">&lt;head&gt;</div><div class="line"></div><div class="line">&lt;style type=&quot;text/css&quot;&gt;</div><div class="line">body</div><div class="line">&#123; </div><div class="line">background-image: </div><div class="line">url(/i/eg_bg_03.gif);</div><div class="line">background-repeat: repeat-y /*y表示水平方向,x表示垂直方向*/</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div><div class="line"></div><div class="line">&lt;/head&gt;</div><div class="line"></div><div class="line">&lt;body&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>居中定位背景图片</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">&lt;html&gt;</div><div class="line">&lt;head&gt;</div><div class="line">&lt;style type=&quot;text/css&quot;&gt;</div><div class="line">body</div><div class="line">&#123; </div><div class="line">  background-image:url(&apos;/i/eg_bg_03.gif&apos;);</div><div class="line">  background-repeat:no-repeat;</div><div class="line">  background-attachment:fixed;</div><div class="line">  background-position:center;</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div><div class="line">&lt;/head&gt;</div><div class="line"></div><div class="line">&lt;body&gt;</div><div class="line">&lt;body&gt;</div><div class="line">&lt;p&gt;&lt;b&gt;提示：&lt;/b&gt;您需要把 background-attachment 属性设置为 &quot;fixed&quot;，才能保证该属性在 Firefox 和 Opera 中正常工作。&lt;/p&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>用%定位背景图片</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&lt;html&gt;</div><div class="line">&lt;head&gt;</div><div class="line">&lt;style type=&quot;text/css&quot;&gt;</div><div class="line">body</div><div class="line">&#123; </div><div class="line">background-image: url(&apos;/i/eg_bg_03.gif&apos;);</div><div class="line">background-repeat: no-repeat;</div><div class="line">background-attachment:fixed;</div><div class="line">background-position: 30% 20%;  /*如果是用像素来定位，替换成&quot;50px 100px&quot;即可*/</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div><div class="line">&lt;/head&gt;</div><div class="line"></div><div class="line">&lt;body&gt;</div><div class="line">&lt;p&gt;&lt;b&gt;注释：&lt;/b&gt;为了在 Mozilla 中实现此效果，background-attachment 属性必须设置为 &quot;fixed&quot;。&lt;/p&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>设置背景图片不跟随页面其他部分滚动</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line">&lt;html&gt;</div><div class="line">&lt;head&gt;</div><div class="line">&lt;style type=&quot;text/css&quot;&gt;</div><div class="line">body </div><div class="line">&#123;</div><div class="line">background-image:url(/i/eg_bg_02.gif);</div><div class="line">background-repeat:no-repeat;</div><div class="line">background-attachment:fixed /*其实有个attachment属性的fixed值就可以了*/</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div><div class="line">&lt;/head&gt;</div><div class="line"></div><div class="line">&lt;body&gt;</div><div class="line">&lt;p&gt;图像不会随页面的其余部分滚动。&lt;/p&gt;</div><div class="line">&lt;p&gt;图像不会随页面的其余部分滚动。&lt;/p&gt;</div><div class="line">&lt;p&gt;图像不会随页面的其余部分滚动。&lt;/p&gt;</div><div class="line">&lt;p&gt;图像不会随页面的其余部分滚动。&lt;/p&gt;</div><div class="line">&lt;p&gt;图像不会随页面的其余部分滚动。&lt;/p&gt;</div><div class="line">&lt;p&gt;图像不会随页面的其余部分滚动。&lt;/p&gt;</div><div class="line">&lt;p&gt;图像不会随页面的其余部分滚动。&lt;/p&gt;</div><div class="line">&lt;p&gt;图像不会随页面的其余部分滚动。&lt;/p&gt;</div><div class="line">&lt;p&gt;图像不会随页面的其余部分滚动。&lt;/p&gt;</div><div class="line">&lt;p&gt;图像不会随页面的其余部分滚动。&lt;/p&gt;</div><div class="line">&lt;p&gt;图像不会随页面的其余部分滚动。&lt;/p&gt;</div><div class="line">&lt;p&gt;图像不会随页面的其余部分滚动。&lt;/p&gt;</div><div class="line">&lt;p&gt;图像不会随页面的其余部分滚动。&lt;/p&gt;</div><div class="line">&lt;p&gt;图像不会随页面的其余部分滚动。&lt;/p&gt;</div><div class="line">&lt;p&gt;图像不会随页面的其余部分滚动。&lt;/p&gt;</div><div class="line">&lt;p&gt;图像不会随页面的其余部分滚动。&lt;/p&gt;</div><div class="line">&lt;p&gt;图像不会随页面的其余部分滚动。&lt;/p&gt;</div><div class="line">&lt;p&gt;图像不会随页面的其余部分滚动。&lt;/p&gt;</div><div class="line">&lt;p&gt;图像不会随页面的其余部分滚动。&lt;/p&gt;</div><div class="line">&lt;p&gt;图像不会随页面的其余部分滚动。&lt;/p&gt;</div><div class="line">&lt;p&gt;图像不会随页面的其余部分滚动。&lt;/p&gt;</div><div class="line">&lt;p&gt;图像不会随页面的其余部分滚动。&lt;/p&gt;</div><div class="line">&lt;p&gt;图像不会随页面的其余部分滚动。&lt;/p&gt;</div><div class="line">&lt;p&gt;图像不会随页面的其余部分滚动。&lt;/p&gt;</div><div class="line">&lt;/body&gt;</div><div class="line"></div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>所有背景属性在一个声明中 /<em>啊，这个我喜欢</em>/</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line">&lt;html&gt;</div><div class="line">&lt;head&gt;</div><div class="line">&lt;style type=&quot;text/css&quot;&gt;</div><div class="line">body &#123;</div><div class="line">	background: #ff0000 url(&quot;/i/ed_bg_03.gif&quot;) no-repeat fixed center;	</div><div class="line">	&#125;</div><div class="line">&lt;/style&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">&lt;p&gt;这是一些文本。&lt;/p&gt;</div><div class="line">&lt;p&gt;这是一些文本。&lt;/p&gt;</div><div class="line">&lt;p&gt;这是一些文本。&lt;/p&gt;</div><div class="line">&lt;p&gt;这是一些文本。&lt;/p&gt;</div><div class="line">&lt;p&gt;这是一些文本。&lt;/p&gt;</div><div class="line">&lt;p&gt;这是一些文本。&lt;/p&gt;</div><div class="line">&lt;p&gt;这是一些文本。&lt;/p&gt;</div><div class="line">&lt;p&gt;这是一些文本。&lt;/p&gt;</div><div class="line">&lt;p&gt;这是一些文本。&lt;/p&gt;</div><div class="line">&lt;p&gt;这是一些文本。&lt;/p&gt;</div><div class="line">&lt;p&gt;这是一些文本。&lt;/p&gt;</div><div class="line">&lt;p&gt;这是一些文本。&lt;/p&gt;</div><div class="line">&lt;p&gt;这是一些文本。&lt;/p&gt;</div><div class="line">&lt;p&gt;这是一些文本。&lt;/p&gt;</div><div class="line">&lt;p&gt;这是一些文本。&lt;/p&gt;</div><div class="line">&lt;p&gt;这是一些文本。&lt;/p&gt;</div><div class="line">&lt;p&gt;这是一些文本。&lt;/p&gt;</div><div class="line">&lt;p&gt;这是一些文本。&lt;/p&gt;</div><div class="line">&lt;p&gt;这是一些文本。&lt;/p&gt;</div><div class="line">&lt;p&gt;这是一些文本。&lt;/p&gt;</div><div class="line">&lt;p&gt;这是一些文本。&lt;/p&gt;</div><div class="line">&lt;p&gt;这是一些文本。&lt;/p&gt;</div><div class="line">&lt;p&gt;这是一些文本。&lt;/p&gt;</div><div class="line">&lt;p&gt;这是一些文本。&lt;/p&gt;</div><div class="line">&lt;/body&gt;</div><div class="line"></div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/CSS/" rel="tag"># CSS</a>
+          
+            <a href="/tags/学习/" rel="tag"># 学习</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/02/03/2017-06-02/" rel="next" title="折腾博客的历程">
+                <i class="fa fa-chevron-left"></i> 折腾博客的历程
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/02/03/如何写好影评/" rel="prev" title="如何写好影评">
+                如何写好影评 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/logo2.jpg"
+               alt="" />
+          <p class="site-author-name" itemprop="name"></p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">18</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/movie/index.html">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://127.0.0.1:43110/1FjjU3hdMHVqDkMjMLVvf4syh39JhnK51c/" target="_blank" title="zeronet">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  zeronet
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#如何插入样式表"><span class="nav-number">1.</span> <span class="nav-text">如何插入样式表</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#当读到一个样式表时，浏览器会根据它来格式化HTML-文档。插入样式表的方法有三种："><span class="nav-number">1.1.</span> <span class="nav-text">当读到一个样式表时，浏览器会根据它来格式化HTML 文档。插入样式表的方法有三种：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多重样式"><span class="nav-number">1.2.</span> <span class="nav-text">多重样式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS-背景"><span class="nav-number">2.</span> <span class="nav-text">CSS 背景</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#CSS-允许应用纯色作为背景，也允许使用背景图像创建相当复杂的效果。CSS-在这方面的能力远远在HTML-之上。"><span class="nav-number">2.1.</span> <span class="nav-text">CSS 允许应用纯色作为背景，也允许使用背景图像创建相当复杂的效果。CSS 在这方面的能力远远在HTML 之上。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#纯色背景"><span class="nav-number">2.2.</span> <span class="nav-text">纯色背景</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#background-color属性不能继承，其默认值为透明。"><span class="nav-number"></span> <span class="nav-text">background-color属性不能继承，其默认值为透明。</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#背景图像"><span class="nav-number">1.</span> <span class="nav-text">背景图像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实例"><span class="nav-number">2.</span> <span class="nav-text">实例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#背景重复"><span class="nav-number">3.</span> <span class="nav-text">背景重复</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#背景定位"><span class="nav-number">4.</span> <span class="nav-text">背景定位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#背景关联"><span class="nav-number">5.</span> <span class="nav-text">背景关联</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS-背景实例"><span class="nav-number">6.</span> <span class="nav-text">CSS 背景实例</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder"></span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<!--  
+-->
+</body>
+</html>
